@@ -1,0 +1,10 @@
+connections:
+  # Conexão com o banco (PostgreSQL) tabelas de staging (fato e dimensões) serão armazenadas
+  - conn_id: 'meu_banco'
+    conn_type: 'postgres'
+    host: 'localhost'             # Endereço do servidor do banco (localhost ou IP do servidor)
+    schema: 'my_database'         # Nome do banco de dados
+    login: 'usuario'              # Usuário de acesso ao banco
+    password: 'senha'             # Senha do usuário
+    port: 5432                    # Porta do banco de dados (padrão do PostgreSQL)
+    extra: '{"sslmode": "disable"}'
